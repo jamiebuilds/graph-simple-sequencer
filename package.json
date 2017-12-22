@@ -1,0 +1,32 @@
+{
+  "name": "graph-simple-sequencer",
+  "version": "0.0.0",
+  "description": "Sort items in a graph using a topological sort into chunks",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "repository": "thejameskyle/graph-simple-sequencer",
+  "license": "MIT",
+  "keywords": [
+    "graph",
+    "adjacency",
+    "list",
+    "tasks",
+    "priority",
+    "priorities",
+    "sort",
+    "dependencies",
+    "topological",
+    "topo",
+    "sequencer"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "flow-bin": "^0.61.0"
+  }
+}
