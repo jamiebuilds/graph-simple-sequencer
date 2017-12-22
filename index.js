@@ -1,5 +1,6 @@
 // @flow
 'use strict';
+const arrayIncludes = require('array-includes');
 
 /*::
 type Graph<T> = Map<T, Array<T>>;
@@ -37,8 +38,8 @@ function graphSimpleSequencer/*::<T>*/(graph /*: Graph<T> */) /*: Result<T> */ {
         let deps = aCurr.length - bCurr.length;
         if (deps !== 0) return deps;
 
-        let aChildren = items.filter(item => (current.get(item) || []).includes(a));
-        let bChildren = items.filter(item => (current.get(item) || []).includes(b));
+        let aChildren = items.filter(item => arrayIncludes(current.get(item) || [], a));
+        let bChildren = items.filter(item => arrayIncludes(current.get(item) || [], b));
         return bChildren.length - aChildren.length;
       });
 
