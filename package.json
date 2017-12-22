@@ -1,6 +1,6 @@
 {
   "name": "graph-simple-sequencer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sort items in a graph using a topological sort into chunks",
   "main": "index.js",
   "author": "James Kyle <me@thejameskyle.com>",
