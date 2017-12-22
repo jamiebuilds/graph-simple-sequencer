@@ -1,4 +1,6 @@
 // @flow
+'use strict';
+
 /*::
 type Graph<T> = Map<T, Array<T>>;
 type Chunks<T> = Array<Array<T>>;
